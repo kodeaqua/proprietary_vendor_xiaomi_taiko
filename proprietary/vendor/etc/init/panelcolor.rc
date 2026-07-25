@@ -1,0 +1,8 @@
+service panel_color /vendor/bin/panelcolor_bin
+    class main
+    user root
+    oneshot
+    disabled
+
+on boot
+    start panel_color
