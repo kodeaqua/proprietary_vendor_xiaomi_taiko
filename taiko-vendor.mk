@@ -570,8 +570,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.4-service.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/dcxo_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxo_nvram_init.rc \
@@ -603,7 +601,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/init.vendor.ins.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.ins.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
@@ -1439,13 +1436,8 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
-    android.hardware.usb-aidl-service.mediatek.xml \
-    android.hardware.usb.gadget-aidl-service.mediatek.xml \
-    android.hardware.wifi.hostapd.mediatek.xml \
-    android.hardware.wifi.supplicant.mediatek.xml \
     dms-service.xml \
     dumpstate-xiaomi.xml \
-    lights-mtk-default.xml \
     manifest_allocator.xml \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
@@ -1519,7 +1511,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.graphics.composer@3.4-service \
     android.hardware.health-service.example \
-    android.hardware.lights-service.mediatek \
     android.hardware.media.c2-mediatek \
     android.hardware.media.c2-mediatek-64b \
     android.hardware.memtrack-service.mediatek \
@@ -1528,8 +1519,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint@4.0-service.mitee \
     android.hardware.sensors-service.multihal \
     android.hardware.thermal-service.mediatek \
-    android.hardware.usb-aidl-service.mediatek \
-    android.hardware.usb.gadget-aidl-service.mediatek \
     camerahalserver \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6789 \
     mtkfusionrild \
