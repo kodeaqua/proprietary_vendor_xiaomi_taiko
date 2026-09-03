@@ -60,6 +60,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aee-commit:$(TARGET_COPY_OUT_VENDOR)/etc/aee-commit \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aee-config:$(TARGET_COPY_OUT_VENDOR)/etc/aee-config \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml_mtk \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs_mtk \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs_mtk \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_scenarios.json \
     vendor/xiaomi/taiko/proprietary/vendor/etc/apdb/APDB_MT6789___W2532:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2532 \
     vendor/xiaomi/taiko/proprietary/vendor/etc/apdb/APDB_MT6789___W2532_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2532_ENUM \
     vendor/xiaomi/taiko/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -205,7 +214,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aurisys_config_adsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_adsp.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.no_zygote.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.no_zygote.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.zygote32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote32.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.zygote64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.zygote64_32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64_32.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/breakwhiteapplist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/breakwhiteapplist.xml \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/build_flags.json:$(TARGET_COPY_OUT_VENDOR)/etc/build_flags.json \
     vendor/xiaomi/taiko/proprietary/vendor/etc/camera/anc_night_algo_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_algo_cache \
     vendor/xiaomi/taiko/proprietary/vendor/etc/camera/anc_night_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_binary_cache \
     vendor/xiaomi/taiko/proprietary/vendor/etc/camera/anc_night_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_model \
@@ -533,6 +547,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/xiaomi/taiko/proprietary/vendor/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
     vendor/xiaomi/taiko/proprietary/vendor/etc/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6789 \
     vendor/xiaomi/taiko/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/xiaomi/taiko/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
@@ -564,12 +579,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.4-service.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/dcxo_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxo_nvram_init.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/ddr_training.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ddr_training.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
@@ -602,6 +621,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/mbrain-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mbrain-mtk-default.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/init/memtrack-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-mediatek.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/mi_ic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi_ic.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/mi_ric.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mi_ric.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/miface.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/miface.rc \
@@ -645,6 +665,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/vgoservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vgoservice.rc \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/wallpapercolor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wallpapercolor.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -676,6 +697,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
     vendor/xiaomi/taiko/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
     vendor/xiaomi/taiko/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
+    vendor/xiaomi/taiko/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/modules_table.csv:$(TARGET_COPY_OUT_VENDOR)/etc/modules_table.csv \
     vendor/xiaomi/taiko/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/taiko/proprietary/vendor/etc/mt6991/imgsensor_firmware:$(TARGET_COPY_OUT_VENDOR)/etc/mt6991/imgsensor_firmware \
@@ -862,588 +884,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-impl \
     vendor.mediatek.hardware.audio-impl \
     vendor.mediatek.hardware.mtkpower-aidl-impl \
-    libSQLiteModule_VER_ALL \
-    libTrueSight \
-    libaal_sec \
-    libaedv \
-    libapu_mdw \
-    libasn1c_core \
-    libaudio_param_parser-vnd \
-    libaudiocompensationfilter_vendor \
-    libaudiocustparam_vendor \
-    libaudioprimarydevicehalifclient \
-    libaudiotoolkit_vendor \
-    libbluetooth_audio_session_aidl_mtk \
-    libbluetooth_hw_test \
-    libbluetooth_relayer \
-    libbluetoothem_mtk \
-    libbwc \
-    libcamalgo.utility \
-    libccci_util \
-    libcodec2_fsr \
-    libcodec2_mtk_c2store \
-    libcodec2_mtk_vdec \
-    libcodec2_mtk_venc \
-    libcodec2_vpp_chdr_plugin \
-    libcodec2_vpp_fa_plugin \
-    libcodec2_vpp_ft_plugin \
-    libcodec2_vpp_mi_plugin \
-    libcodec2_vpp_qt_plugin \
-    libcodec2_vpp_roi_plugin \
-    libcodec2_vpp_rs_plugin \
-    libcomposer_ext \
-    libconnfem \
-    libdapparamstorage \
-    libdisplayfeature \
-    libdisplayfeatureservice \
-    libdmshal \
-    libfile_op \
-    libformatter \
-    libged \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
-    libgz_uree \
-    libicd_decoder \
-    libion_mtk \
-    libion_ulit \
-    libladder \
-    libmfido_mitee \
-    libminiui \
-    libmipc \
-    libmisight \
-    libmlipay_mitee \
-    libmtk_bsg \
-    libmtkcutils \
-    libmtkgpuserv \
-    libmtkhardware_legacy \
-    libmtkproperty \
-    libmtkrillog \
-    libmvpu_config \
-    libmvpu_engine_25 \
-    libmvpu_pattern_25 \
-    libnvram \
-    libnvram_sec \
-    liboemcrypto \
-    libpixelflinger \
-    libpower_timer \
-    libpowerhal \
-    libpqframework \
-    libpqhdrmetaparser \
-    libpqsharememory \
-    libpqtuning \
-    libpqxmlflagparser \
-    libpqxmlparser \
-    libsdrparser \
-    libsoter \
-    libsysenv \
-    libteecli \
-    libtida_mitee \
-    libtranslator_utils \
-    libtrm \
-    libudf \
-    libvsim_mitee \
-    arm.graphics-V5-ndk \
-    gc05a2_truly_front_mipi_raw_IdxMgr \
-    gc08a8_truly_main_mipi_raw_IdxMgr \
-    lib3a.ae.core \
-    lib3a.ae \
-    lib3a.awb.core \
-    lib3a.log \
-    libaiselector \
-    libcam.hal3a.log \
-    libcamalgo.platform2 \
-    libcameracustom.lens \
-    libcameracustom \
-    libdpframework \
-    libmmagent \
-    libmml \
-    libmmlpqImpl \
-    libmtk_drvb \
-    libmtk_mali_user \
-    libmtkcam.atmseventmgr \
-    libmtkcam_debugutils \
-    libmtkcam_metadata \
-    libmtkcam_modulehelper \
-    libmtkcam_stdutils \
-    libmtkcam_sysutils \
-    libmtkcam_tuning_utils \
-    libmtkcam_ulog \
-    libpq_sec \
-    libpqparamparser \
-    libvcodec_utility_v3a \
-    libvcodecdrv_v3a \
-    libvpudv3a_vcodec \
-    vendor.dolby.dms-V1-ndk \
-    vendor.dolby.hardware.dms@2.0 \
-    vendor.mediatek.framework.mtksf_ext-V7-ndk \
-    vendor.mediatek.hardware.apmonitor-V1-ndk \
-    vendor.mediatek.hardware.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
-    vendor.mediatek.hardware.graphics-V1-ndk \
-    vendor.mediatek.hardware.mbrain-V6-ndk \
-    vendor.mediatek.hardware.mbrainj-V1-ndk \
-    vendor.mediatek.hardware.mdmonitor-V1-ndk \
-    vendor.mediatek.hardware.mdmonitor@1.0 \
-    vendor.mediatek.hardware.mmagent-V1-ndk \
-    vendor.mediatek.hardware.mmlpq-V3-ndk \
-    vendor.mediatek.hardware.mmlpq-V4-ndk \
-    vendor.mediatek.hardware.mms-V1-ndk \
-    vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
-    vendor.mediatek.hardware.netdagent-V1-ndk \
-    vendor.mediatek.hardware.netdagent@1.0 \
-    vendor.mediatek.hardware.nvram-V1-ndk \
-    vendor.mediatek.hardware.nwk_opt_new-V1-ndk \
-    vendor.mediatek.hardware.pq_aidl-V3-ndk \
-    vendor.mediatek.hardware.pq_aidl-V7-ndk \
-    vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
-    vendor.xiaomi.hardware.aidl.tidaservice-V1-ndk \
-    vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
-    vendor.xiaomi.hardware.mfidoca-V1-ndk \
-    vendor.xiaomi.hardware.mlipay-V1-ndk \
-    vendor.xiaomi.hardware.soterservice-V1-ndk \
-    vendor.xiaomi.hardware.vsimapp-V1-ndk \
-    vendor.xiaomi.sensor.citsensorservice-V1-ndk \
-    vendor.mediatek.hardware.rcs-V1-ndk \
-    vendor.mediatek.hardware.rcs@2.0 \
-    android.hardware.power-service-mediatek \
-    hq_algoutils \
-    vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
-    vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
-    vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
-    vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl \
-    libJpgEncPipe \
-    libMiVideoFilter \
-    libanc_night \
-    libanc_night_preview \
-    libc++_shared \
-    libcam.halsensor.hwintegration_mt6789 \
-    libcam.halsensor.hwintegration_mt6855 \
-    libcamalgo.3dnr \
-    libcamalgo.dngop \
-    libcamalgo.platform \
-    libcamalgo.warp \
-    libcamera_scene \
-    libcodec2_store_dolby \
-    libcsalgo \
-    libdlbdsservice \
-    libfft_vendor \
-    libforkexecwrap \
-    libheichal \
-    libhfmanager \
-    libhfmanagerwrapper \
-    libhwm \
-    libifcutils_mtk \
-    libjpeg-alpha-oal_vendor \
-    libjpeg-alpha_vendor \
-    libmialgo_sd \
-    libmiriskmanager_mitee \
-    libmorpho_HdrChecker \
-    libmorpho_ImageRefiner \
-    libmorpho_video_stabilizer \
-    libmt_mitee \
-    libmtkcam.MITPS \
-    libmtkcam_pipelinepolicy-aov \
-    libmtkconfig \
-    libmtkconfigutils \
-    libmtkisp_metadata_V3 \
-    libmtkrilutils \
-    libmtkutils \
-    libneuralnetworks_sl_driver_mtk_prebuilt \
-    libratconfig \
-    librcs_volte_core \
-    librilfusion \
-    libstorage_otp \
-    libvgoservice \
-    libwifical \
-    libwifinvram \
-    libwifitest \
-    libwifitesttool \
-    libwvkeybox \
-    lib3a.af.assist \
-    lib3a.af.assist.utils \
-    lib3a.af.core \
-    lib3a.flash \
-    libcam.chdr \
-    libcam.feature_utils \
-    libcam.hal3a.v3.nvram.50 \
-    libcam.halsensor \
-    libcam.iopipe \
-    libcam.utils.sensorprovider \
-    libcam.vhdr \
-    libcamalgo.eis \
-    libcamalgo.fdft \
-    libcamalgo.fsc \
-    libcamalgo.gyro \
-    libcamalgo.lmv \
-    libcamalgo.n3d \
-    libcamalgo.rotate \
-    libcamalgo.vsf \
-    libcamdrv_isp \
-    libcamdrv_tuning_mgr \
-    libcamdrv_twin \
-    libcameracustom.camera.3a \
-    libcameracustom.camera.isp \
-    libcameracustom.eis \
-    libdip_drv \
-    libdip_postproc \
-    libeffecthal.base \
-    libfeature.face \
-    libfeature.stereo.provider \
-    libfeature.vsdof.hal \
-    libfeature_3dnr \
-    libfeature_eis \
-    libfeature_fsc \
-    libfeature_lmv \
-    libfeature_rss \
-    libfeatureiodrv_mem \
-    libimageio \
-    libimageio_plat_drv \
-    libimageio_plat_pipe \
-    liblpcnr \
-    libmsnr \
-    libmtkcam.debugwrapper \
-    libmtkcam.eventcallback \
-    libmtkcam.featurepipe.capture \
-    libmtkcam.featurepipe.depthmap \
-    libmtkcam.featurepipe.streaming \
-    libmtkcam.featurepipe.vsdof_util \
-    libmtkcam.logicalmodule \
-    libmtkcam_3rdparty.core \
-    libmtkcam_3rdparty.customer \
-    libmtkcam_3rdparty.mtk \
-    libmtkcam_3rdparty \
-    libmtkcam_calibration_convertor \
-    libmtkcam_calibration_provider \
-    libmtkcam_device3_app \
-    libmtkcam_device3_hal \
-    libmtkcam_device3_hidl \
-    libmtkcam_device3_hidlutils \
-    libmtkcam_device3_utils \
-    libmtkcam_devicesessionpolicy \
-    libmtkcam_diputils \
-    libmtkcam_exif \
-    libmtkcam_fdvt \
-    libmtkcam_featurepolicy \
-    libmtkcam_featureutils \
-    libmtkcam_grallocutils \
-    libmtkcam_hwnode \
-    libmtkcam_hwutils \
-    libmtkcam_imem \
-    libmtkcam_imgbuf \
-    libmtkcam_mapping_mgr \
-    libmtkcam_metastore \
-    libmtkcam_mfb \
-    libmtkcam_owe \
-    libmtkcam_pipeline \
-    libmtkcam_pipeline_fbm \
-    libmtkcam_pipelinemodel \
-    libmtkcam_pipelinemodel_adapter \
-    libmtkcam_pipelinemodel_capture \
-    libmtkcam_pipelinemodel_isp \
-    libmtkcam_pipelinemodel_session \
-    libmtkcam_pipelinemodel_utils \
-    libmtkcam_pipelinemodel_zsl \
-    libmtkcam_pipelinepolicy-security \
-    libmtkcam_pipelinepolicy-smvr \
-    libmtkcam_pipelinepolicy \
-    libmtkcam_pipelinepolicy_factory \
-    libmtkcam_prerelease \
-    libmtkcam_rsc \
-    libmtkcam_scenariorecorder \
-    libmtkcam_streamutils \
-    libmtkcam_synchelper \
-    libstereoinfoaccessor_vsdof \
-    nwk_opt_imp \
-    vendor.mediatek.hardware.aee-V1-ndk \
-    vendor.mediatek.hardware.aee@1.0 \
-    vendor.mediatek.hardware.aee@1.1 \
-    vendor.mediatek.hardware.camera.bgservice-V1-ndk \
-    vendor.mediatek.hardware.camera.frhandler@1.0 \
-    vendor.mediatek.hardware.camera.postproc-V1-ndk \
-    vendor.mediatek.hardware.camera.postproc@1.0 \
-    vendor.mediatek.hardware.camera.security@1.0 \
-    vendor.mediatek.hardware.clientapi-V1-ndk \
-    vendor.mediatek.hardware.dmc-V1-ndk \
-    vendor.mediatek.hardware.lbs@1.0 \
-    vendor.mediatek.hardware.log-V1-ndk \
-    vendor.mediatek.hardware.mmagent@1.0 \
-    vendor.mediatek.hardware.mmagent@1.1 \
-    vendor.mediatek.hardware.mtklight-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.assist-V4-ndk \
-    vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.data-V3-ndk \
-    vendor.mediatek.hardware.mtkradioex.dch-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.em-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.ims-V3-ndk \
-    vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.modem-V5-ndk \
-    vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.network-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.ntn-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.rcs-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.sim-V2-ndk \
-    vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
-    vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
-    vendor.mediatek.hardware.neuropilot.neuronservice-V1-ndk \
-    vendor.mediatek.hardware.nps.nos.fastswitch-V1-ndk \
-    vendor.mediatek.hardware.power@1.1 \
-    vendor.mediatek.hardware.power@2.0 \
-    vendor.xiaomi.hardware.blackbox-V1-ndk \
-    vendor.xiaomi.hardware.cld_aidl-V1-ndk \
-    vendor.xiaomi.hardware.micharge-V2-ndk \
-    vendor.xiaomi.hardware.misauth-V1-ndk \
-    vendor.xiaomi.hardware.misys.common-V3-ndk \
-    vendor.xiaomi.hardware.misys.core-V1-ndk \
-    vendor.xiaomi.hardware.mrm-V1-ndk \
-    vendor.xiaomi.hardware.mtkblackbox-V2-ndk \
-    vendor.xiaomi.hardware.otrpagent2-V1-ndk \
-    vendor.xiaomi.hardware.otrpagent@2.0-impl \
-    vendor.xiaomi.hw.touchfeature-V1-ndk \
-    xiaomi.system.hypsys.common-V1-ndk \
-    libged_sys \
-    libgralloc_extra_sys \
-    libsf_cpupolicy \
-    libstagefright_mbrain \
-    libstagefright_wfd_mtk \
-    vendor.mediatek.hardware.camera.atms-V1-ndk \
-    vendor.mediatek.hardware.camera.atms@1.0 \
-    vendor.mediatek.hardware.camera.isphal-V1-ndk \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
-    vendor.mediatek.hardware.composer_ext-V1-ndk \
-    vendor.mediatek.hardware.composer_ext@1.0 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower-V3-ndk \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.10 \
-    vendor.mediatek.hardware.pq@2.11 \
-    vendor.mediatek.hardware.pq@2.12 \
-    vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.pq@2.7 \
-    vendor.mediatek.hardware.pq@2.8 \
-    vendor.mediatek.hardware.pq@2.9 \
-    vendor.mediatek.hardware.videotelephony-V1-ndk \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.pixelworks.hardware.display@1.0 \
-    vendor.pixelworks.hardware.display@1.1 \
-    vendor.pixelworks.hardware.display@1.2 \
-    vendor.pixelworks.hardware.feature@1.0 \
-    vendor.pixelworks.hardware.feature@1.1 \
-    vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
-    libacse \
-    libdolbyacse_jni \
-    vendor.mediatek.hardware.mtkpower-V1-ndk \
-    NetworkStackGoogleGoResOverlay \
-    NetworkStackGoogleResOverlay \
-    NetworkStackResOverlay \
-    TetheringGoogleResOverlay \
-    TetheringResOverlay \
-    androidx.camera.extensions.impl.dummy \
-    CommandService.xml \
-    FastSwitch.xml \
-    android.hardware.audio.effect.service-aidl.mediatek.xml \
-    android.hardware.audio.service-aidl.mediatek.xml \
-    android.hardware.bluetooth-service-mediatek.xml \
-    android.hardware.gatekeeper-service.mitee.xml \
-    android.hardware.security.keymint-service.mitee.xml \
-    android.hardware.security.secureclock-service.mitee.xml \
-    android.hardware.security.sharedsecret-service.mitee.xml \
-    dms-service.xml \
-    dumpstate-xiaomi.xml \
-    manifest_allocator.xml \
-    manifest_cameraprovider.xml \
-    manifest_hwcomposer.xml \
-    manifest_isphal.xml \
-    manifest_media_c2_default.xml \
-    manifest_mtkblackbox.xml \
-    manifest_vendor.xiaomi.hardware.cld_aidl.xml \
-    manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml \
-    mapper.mediatek.xml \
-    miface.xml \
-    mrm.xml \
-    mtkpower_applist-mtk-default.xml \
-    vendor.dolby.media.c2-default-service-dax.xml \
-    vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
-    vendor.xiaomi.hardware.micharge.xml \
-    vendor.xiaomi.hardware.misys.common.xml \
-    vendor.xiaomi.hardware.misys.core.xml \
-    vendor.xiaomi.hw.touchfeature-service.xml \
-    vendor.xiaomi.sensor.citsensorservice.aidl.xml \
-    AgentTest \
-    DFtool \
-    MI_IC \
-    MI_RIC \
-    SoterProvisioningTool_mitee \
-    aee_aedv64_v2 \
-    aee_dumpstatev_v2 \
-    aeev_v2 \
-    ated \
-    audiocmdservice_atci \
-    autobt \
-    backlight_bin \
-    bip_ap \
-    boardid_bin \
-    bt_dump \
-    ccci_mdinit \
-    ccci_rpcd \
-    charge_logger \
-    color \
-    conninfra_loader \
-    cteisno_bin \
-    dconfig \
-    dcxosetcap \
-    dexecutor \
-    displayfeature \
-    dmc_core \
-    doeapp-memtester \
-    doeapp-sat \
-    dreport \
-    dtc_vendor \
-    eara_io_service \
-    factory \
-    ffu \
-    fidoca_mitee \
-    fpsgo \
-    frs \
-    frs_intf \
-    fuelgauged \
-    fuelgauged_nvram \
-    gsm0710muxd \
-    android.hardware.audio.service-aidl.mediatek \
-    android.hardware.bluetooth-service-mediatek \
-    android.hardware.bluetooth.finder-service-mediatek \
-    android.hardware.bluetooth.ranging-service.mediatek \
-    android.hardware.dumpstate-service.xiaomi \
-    android.hardware.gatekeeper-service.mitee \
-    android.hardware.graphics.composer@3.2-service \
-    android.hardware.graphics.composer@3.3-service \
-    android.hardware.graphics.composer@3.4-service \
-    android.hardware.lights-service.mediatek \
-    android.hardware.media.c2-mediatek \
-    android.hardware.media.c2-mediatek-64b \
-    android.hardware.neuralnetworks-shim-service-mtk \
-    android.hardware.neuralnetworks-shim-service-mtk-lazy \
-    android.hardware.security.keymint@4.0-service.mitee \
-    android.hardware.usb-aidl-service.mediatek \
-    android.hardware.usb.gadget-aidl-service.mediatek \
-    android.hardware.graphics.allocator-V2-service-mediatek.mt6789 \
-    mtkfusionrild \
-    tetheroffloadservice \
-    vendor.dolby.dms.service \
-    vendor.dolby.media.c2-default-service-dax \
-    vendor.mediatek.hardware.aee@V1-service \
-    vendor.mediatek.hardware.gpuserv-service \
-    vendor.mediatek.hardware.mbrain-service.mediatek \
-    vendor.mediatek.hardware.mmagent-service \
-    vendor.mediatek.hardware.mmlpq@V1-service \
-    vendor.mediatek.hardware.mms-service \
-    vendor.mediatek.hardware.mtkpower-service.mediatek \
-    vendor.mediatek.hardware.mtkpower_applist-service.mediatek \
-    vendor.mediatek.hardware.neuropilot.neuronservice.neuronservice.mediatek \
-    vendor.mediatek.hardware.nvram-service \
-    vendor.mediatek.hardware.nwk_opt@1.0-service \
-    vendor.mediatek.hardware.pq_aidl-service \
-    vendor.mediatek.hardware.vgoservice \
-    vendor.xiaomi.hardware.cld_aidl-service \
-    vendor.xiaomi.hardware.displayfeature_aidl-service \
-    vendor.xiaomi.hardware.micharge-service \
-    vendor.xiaomi.hardware.mimd2 \
-    vendor.xiaomi.hardware.misys.core-service \
-    vendor.xiaomi.hw.touchfeature-service \
-    vendor.xiaomi.sensor.citsensorservice.aidl \
-    hypsys_vendor \
-    initprop_bin \
-    iwlist \
-    iwpriv \
-    jxnosfastswitch \
-    loghidlvendorservice \
-    meta_tst \
-    mi_thermald \
-    miteelog \
-    mlipayd_mitee \
-    mrdump_tool \
-    mrmd_mitee \
-    mt6660_calibration \
-    jpegtool \
-    v3avpud-64b.mt6789 \
-    mtd_mitee \
-    mtk_pkm_service \
-    mtk_plpath_utils_ota \
-    mtk_storageproxyd \
-    muxreport \
-    mvpu_ptn_player32_25 \
-    netdagent \
-    netdc \
-    nvram_daemon \
-    panelcolor_bin \
-    rcs_volte_stack \
-    rt5512_calibration \
-    rttv_v2 \
-    smartpa_nvtest \
-    sns_sensors_test_and_cal \
-    soterd \
-    stp_dump3 \
-    tee-supplicant \
-    test-nusensor \
-    test-nusensors.xiaomi \
-    thermal_core \
-    thermal_intf \
-    tidad_mitee \
-    touch_boost \
-    uart_launcher \
-    userdata_setup \
-    vendor.xiaomi.hardware.otrpagent2 \
-    volte_clientapi_ua \
-    volte_rcs_ua \
-    vsimd_mitee \
-    wallpapercolor_bin \
-    wifi_dump \
-    wifitest \
-    wlan_assistant \
-    wmt_launcher \
-    wmt_loader \
-    wpa_cli
-
-# restored: soong-namespaced modules (no real collision) removed by mistake
-PRODUCT_PACKAGES += \
-    libOpenCL \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    vendor.mediatek.hardware.mtkpower@1.2 \
-    vendor.xiaomi.hardware.displayfeature@1.0 \
-    vendor.xiaomi.hardware.fingerprintextension@1.0 \
-    com.android.hardware.cas
-
-# restored: MediaTek-specific variants (no collision, dropped by substring match)
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk
-
-# ===== Camera stack re-integrated (build #2, full closure) =====
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc
-
-PRODUCT_PACKAGES += \
     libCamera_gc05a2trulyfrontmipiraw_3rd_Capture \
     libCamera_gc05a2trulyfrontmipiraw_3rd_Preview \
     libCamera_gc05a2trulyfrontmipiraw_Face_Capture \
@@ -1513,21 +953,242 @@ PRODUCT_PACKAGES += \
     libCamera_s5kjn1sq03mipiraw_Video_1080 \
     libCamera_s5kjn1sq03mipiraw_Video_1080_60 \
     libCamera_s5kjn1sq03mipiraw_Video_4k \
+    libOpenCL \
+    libSQLiteModule_VER_ALL \
+    libTrueSight \
+    libaal_sec \
+    libaedv \
+    libapu_mdw \
+    libasn1c_core \
+    libaudio_param_parser-vnd \
+    libaudiocompensationfilter_vendor \
+    libaudiocustparam_vendor \
+    libaudioprimarydevicehalifclient \
+    libaudiotoolkit_vendor \
+    libbluetooth_audio_session_aidl_mtk \
+    libbluetooth_hw_test \
+    libbluetooth_mtk \
+    libbluetooth_relayer \
+    libbluetoothem_mtk \
+    libbt-vendor \
+    libbwc \
+    libcamalgo.utility \
+    libccci_util \
+    libcodec2_fsr \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_vpp_chdr_plugin \
+    libcodec2_vpp_fa_plugin \
+    libcodec2_vpp_ft_plugin \
+    libcodec2_vpp_mi_plugin \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_roi_plugin \
+    libcodec2_vpp_rs_plugin \
+    libcomposer_ext \
+    libconnfem \
+    libdapparamstorage \
+    libdisplayfeature \
+    libdisplayfeatureservice \
+    libdmshal \
+    libfile_op \
+    libformatter \
+    libged \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
+    libgz_uree \
+    libicd_decoder \
+    libion_mtk \
+    libion_ulit \
     libispcameraca \
+    libladder \
+    libmfido_mitee \
+    libminiui \
+    libmipc \
+    libmisight \
+    libmlipay_mitee \
+    libmtk_bsg \
     libmtkcam_perfctrl_wrapper \
+    libmtkcutils \
+    libmtkgpuserv \
+    libmtkhardware_legacy \
+    libmtkproperty \
+    libmtkrillog \
+    libmvpu_config \
+    libmvpu_engine_25 \
+    libmvpu_pattern_25 \
+    libnvram \
+    libnvram_sec \
+    liboemcrypto \
+    libpixelflinger \
+    libpower_timer \
+    libpowerhal \
+    libpqframework \
+    libpqhdrmetaparser \
+    libpqsharememory \
+    libpqtuning \
+    libpqxmlflagparser \
+    libpqxmlparser \
+    libsdrparser \
+    libsoter \
+    libsysenv \
+    libteecli \
+    libtida_mitee \
+    libtranslator_utils \
+    libtrm \
+    libudf \
+    libvsim_mitee \
+    arm.graphics-V5-ndk \
+    gc05a2_truly_front_mipi_raw_IdxMgr \
+    gc08a8_truly_main_mipi_raw_IdxMgr \
+    lib3a.ae.core \
+    lib3a.ae \
+    lib3a.awb.core \
+    lib3a.log \
+    libaiselector \
+    libcam.hal3a.log \
+    libcamalgo.platform2 \
+    libcameracustom.lens \
+    libcameracustom \
+    libdpframework \
+    libmmagent \
+    libmml \
+    libmmlpqImpl \
+    libmtk_drvb \
+    libmtk_mali_user \
+    libmtkcam.atmseventmgr \
+    libmtkcam_debugutils \
+    libmtkcam_metadata \
+    libmtkcam_modulehelper \
+    libmtkcam_stdutils \
+    libmtkcam_sysutils \
+    libmtkcam_tuning_utils \
+    libmtkcam_ulog \
+    libpq_sec \
+    libpqparamparser \
+    libvcodec_utility_v3a \
+    libvcodecdrv_v3a \
+    libvpudv3a_vcodec \
     sensors.camera.light \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby.hardware.dms@2.0 \
+    vendor.mediatek.framework.mtksf_ext-V7-ndk \
+    vendor.mediatek.hardware.apmonitor-V1-ndk \
+    vendor.mediatek.hardware.audio-V1-ndk \
+    vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
+    vendor.mediatek.hardware.bluetooth.audio@2.1 \
+    vendor.mediatek.hardware.bluetooth.audio@2.2 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.1 \
+    vendor.mediatek.hardware.graphics-V1-ndk \
+    vendor.mediatek.hardware.mbrain-V6-ndk \
+    vendor.mediatek.hardware.mbrainj-V1-ndk \
+    vendor.mediatek.hardware.mdmonitor-V1-ndk \
+    vendor.mediatek.hardware.mdmonitor@1.0 \
+    vendor.mediatek.hardware.mmagent-V1-ndk \
+    vendor.mediatek.hardware.mmlpq-V3-ndk \
+    vendor.mediatek.hardware.mmlpq-V4-ndk \
+    vendor.mediatek.hardware.mms-V1-ndk \
+    vendor.mediatek.hardware.mtkpower_applist-V3-ndk \
+    vendor.mediatek.hardware.netdagent-V1-ndk \
+    vendor.mediatek.hardware.netdagent@1.0 \
+    vendor.mediatek.hardware.nvram-V1-ndk \
+    vendor.mediatek.hardware.nwk_opt_new-V1-ndk \
+    vendor.mediatek.hardware.pq_aidl-V3-ndk \
+    vendor.mediatek.hardware.pq_aidl-V7-ndk \
+    vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
+    vendor.xiaomi.hardware.aidl.tidaservice-V1-ndk \
+    vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
+    vendor.xiaomi.hardware.mfidoca-V1-ndk \
+    vendor.xiaomi.hardware.mlipay-V1-ndk \
+    vendor.xiaomi.hardware.soterservice-V1-ndk \
+    vendor.xiaomi.hardware.vsimapp-V1-ndk \
+    vendor.xiaomi.sensor.citsensorservice-V1-ndk \
+    vendor.mediatek.hardware.rcs-V1-ndk \
+    vendor.mediatek.hardware.rcs@2.0 \
+    android.hardware.power-service-mediatek \
+    hq_algoutils \
     android.hardware.camera.provider@2.6-impl-mediatek \
     vendor.mediatek.hardware.camera.ccap@1.0-impl \
+    vendor.mediatek.hardware.camera.isphal_aidl@1.0-impl \
+    vendor.mediatek.hardware.camera.atms_aidl@1.0-impl \
+    vendor.mediatek.hardware.camera.bgservice_aidl@1.0-impl \
+    vendor.mediatek.hardware.camera.postproc_aidl@1.0-impl \
     vendor.mediatek.hardware.camera.uieventservice_aidl@1.0-impl \
+    libJpgEncPipe \
+    libMiVideoFilter \
+    libaaa_flickerutil \
+    libanc_night \
+    libanc_night_preview \
+    libc++_shared \
+    libcam.halsensor.hwintegration_mt6789 \
+    libcam.halsensor.hwintegration_mt6855 \
+    libcam.seninfn3d \
+    libcamalgo.3dnr \
+    libcamalgo.dngop \
+    libcamalgo.nr \
+    libcamalgo.platform \
+    libcamalgo.warp \
+    libcamera_scene \
+    libcodec2_store_dolby \
+    libcsalgo \
+    libdlbdsservice \
+    libfft_vendor \
+    libforkexecwrap \
+    libheichal \
+    libhfmanager \
+    libhfmanagerwrapper \
+    libhwm \
+    libifcutils_mtk \
+    libimagebuffer_wrapper \
+    libjpeg-alpha-oal_vendor \
+    libjpeg-alpha_vendor \
+    libmialgo_sd \
+    libmiriskmanager_mitee \
+    libmorpho_HdrChecker \
+    libmorpho_ImageRefiner \
+    libmorpho_video_stabilizer \
+    libmt_mitee \
+    libmtkcam.MITPS \
+    libmtkcam.mcsspolicy \
+    libmtkcam.uievent \
+    libmtkcam_capture_request_monitor \
+    libmtkcam_custom.security \
+    libmtkcam_custom.sensorprovider \
+    libmtkcam_hal_custom_utils \
+    libmtkcam_pgo \
+    libmtkcam_pipelinepolicy-aov \
+    libmtkcam_pwrutils.android \
+    libmtkconfig \
+    libmtkconfigutils \
+    libmtkisp_metadata_V3 \
+    libmtkrilutils \
+    libmtkutils \
+    libneuralnetworks_sl_driver_mtk_prebuilt \
+    libratconfig \
+    librcs_volte_core \
+    libremosaic_wrapper \
+    librilfusion \
+    libstorage_otp \
+    libvgoservice \
+    libwifical \
+    libwifinvram \
+    libwifitest \
+    libwifitesttool \
+    libwvkeybox \
     lib3a.ae.stat \
+    lib3a.af.assist \
+    lib3a.af.assist.utils \
+    lib3a.af.core \
     lib3a.af \
     lib3a.alsflicker \
     lib3a.ccudrv \
     lib3a.ccuif \
     lib3a.custom.ae \
     lib3a.dce \
+    lib3a.flash \
     lib3a.flicker \
     lib3a.gma \
     lib3a.lce \
@@ -1542,13 +1203,14 @@ PRODUCT_PACKAGES += \
     libSonyIMX386PdafLibraryWrapper \
     libSonyIMX519PdafLibrary \
     libSonyIMX519PdafLibraryWrapper \
-    libaaa_flickerutil \
     libaaa_ltm \
     libaaa_ltmx \
     libaiawb_moon \
     libaiawb_p1ggm \
     libaiawb_sun \
     libcam.afhal \
+    libcam.chdr \
+    libcam.feature_utils \
     libcam.hal3a.v3.ae \
     libcam.hal3a.v3.ai3a \
     libcam.hal3a.v3.awb \
@@ -1556,55 +1218,420 @@ PRODUCT_PACKAGES += \
     libcam.hal3a.v3.fsmgr \
     libcam.hal3a.v3.lscMgr \
     libcam.hal3a.v3.lsctbl.50 \
+    libcam.hal3a.v3.nvram.50 \
     libcam.hal3a.v3.platform \
     libcam.hal3a.v3.resultpool \
     libcam.hal3a.v3 \
     libcam.halisp.buf \
     libcam.halisp.common \
     libcam.halisp \
+    libcam.halsensor \
+    libcam.iopipe \
     libcam.isptuning \
     libcam.pdtblgen \
-    libcam.seninfn3d \
     libcam.tuning.cache \
+    libcam.utils.sensorprovider \
+    libcam.vhdr \
+    libcamalgo.eis \
+    libcamalgo.fdft \
+    libcamalgo.fsc \
+    libcamalgo.gyro \
     libcamalgo.ispfeature \
+    libcamalgo.lmv \
     libcamalgo.lsc \
-    libcamalgo.nr \
-    libimagebuffer_wrapper \
-    libmtkcam.mcsspolicy \
-    libmtkcam.uievent \
-    libmtkcam_capture_request_monitor \
-    libmtkcam_custom.security \
-    libmtkcam_custom.sensorprovider \
-    libmtkcam_hal_custom_utils \
-    libmtkcam_pgo \
-    libmtkcam_pwrutils.android \
-    libremosaic_wrapper \
+    libcamalgo.n3d \
+    libcamalgo.rotate \
+    libcamalgo.vsf \
+    libcamdrv_isp \
+    libcamdrv_tuning_mgr \
+    libcamdrv_twin \
     libcamera.custom.pd_buf_mgr \
     libcamera.customae \
     libcamera.customaf \
     libcamera.customawb \
     libcamera.customflk \
+    libcameracustom.camera.3a \
+    libcameracustom.camera.isp \
     libcameracustom.camera.sensors \
     libcameracustom.camera_exif \
+    libcameracustom.eis \
     libcameracustom.flashlight \
     libcameracustom.plugin \
+    libdip_drv \
+    libdip_postproc \
+    libeffecthal.base \
+    libfeature.face \
+    libfeature.stereo.provider \
+    libfeature.vsdof.hal \
+    libfeature_3dnr \
+    libfeature_eis \
+    libfeature_fsc \
+    libfeature_lmv \
+    libfeature_rss \
+    libfeatureiodrv_mem \
+    libimageio \
+    libimageio_plat_drv \
+    libimageio_plat_pipe \
+    liblpcnr \
+    libmsnr \
+    libmtkcam.debugwrapper \
+    libmtkcam.eventcallback \
+    libmtkcam.featurepipe.capture \
+    libmtkcam.featurepipe.depthmap \
+    libmtkcam.featurepipe.streaming \
+    libmtkcam.featurepipe.vsdof_util \
+    libmtkcam.logicalmodule \
+    libmtkcam_3rdparty.core \
+    libmtkcam_3rdparty.customer \
+    libmtkcam_3rdparty.mtk \
+    libmtkcam_3rdparty \
+    libmtkcam_calibration_convertor \
+    libmtkcam_calibration_provider \
+    libmtkcam_device3_app \
+    libmtkcam_device3_hal \
+    libmtkcam_device3_hidl \
+    libmtkcam_device3_hidlutils \
+    libmtkcam_device3_utils \
+    libmtkcam_devicesessionpolicy \
+    libmtkcam_diputils \
+    libmtkcam_exif \
+    libmtkcam_fdvt \
+    libmtkcam_featurepolicy \
+    libmtkcam_featureutils \
     libmtkcam_fwkutils \
+    libmtkcam_grallocutils \
     libmtkcam_hal_aidl_common \
     libmtkcam_hal_aidl_device \
     libmtkcam_hal_aidl_provider \
     libmtkcam_hal_aidl_utils \
+    libmtkcam_hwnode \
+    libmtkcam_hwutils \
+    libmtkcam_imem \
+    libmtkcam_imgbuf \
+    libmtkcam_mapping_mgr \
+    libmtkcam_metastore \
+    libmtkcam_mfb \
     libmtkcam_modulefactory_aaa \
     libmtkcam_modulefactory_custom \
     libmtkcam_modulefactory_drv \
     libmtkcam_modulefactory_utils \
+    libmtkcam_owe \
+    libmtkcam_pipeline \
+    libmtkcam_pipeline_fbm \
+    libmtkcam_pipelinemodel \
+    libmtkcam_pipelinemodel_adapter \
+    libmtkcam_pipelinemodel_capture \
+    libmtkcam_pipelinemodel_isp \
+    libmtkcam_pipelinemodel_session \
+    libmtkcam_pipelinemodel_utils \
+    libmtkcam_pipelinemodel_zsl \
+    libmtkcam_pipelinepolicy-security \
+    libmtkcam_pipelinepolicy-smvr \
+    libmtkcam_pipelinepolicy \
+    libmtkcam_pipelinepolicy_factory \
+    libmtkcam_prerelease \
+    libmtkcam_rsc \
+    libmtkcam_scenariorecorder \
+    libmtkcam_streamutils \
+    libmtkcam_synchelper \
+    libstereoinfoaccessor_vsdof \
     libmtkcam_streaminfo_plugin-p1stt \
+    nwk_opt_imp \
+    vendor.mediatek.hardware.aee-V1-ndk \
+    vendor.mediatek.hardware.aee@1.0 \
+    vendor.mediatek.hardware.aee@1.1 \
     vendor.mediatek.hardware.camera.aovservice-V3-ndk \
+    vendor.mediatek.hardware.camera.bgservice-V1-ndk \
     vendor.mediatek.hardware.camera.ccap@1.0 \
+    vendor.mediatek.hardware.camera.frhandler@1.0 \
     vendor.mediatek.hardware.camera.isphal@1.1 \
+    vendor.mediatek.hardware.camera.postproc-V1-ndk \
+    vendor.mediatek.hardware.camera.postproc@1.0 \
+    vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.camera.uievent-V1-ndk \
-    camerahalserver
-
-# ===== Bluetooth vendor libs (fix) =====
-PRODUCT_PACKAGES += \
-    libbluetooth_mtk \
-    libbt-vendor
+    vendor.mediatek.hardware.clientapi-V1-ndk \
+    vendor.mediatek.hardware.dmc-V1-ndk \
+    vendor.mediatek.hardware.lbs@1.0 \
+    vendor.mediatek.hardware.log-V1-ndk \
+    vendor.mediatek.hardware.mmagent@1.0 \
+    vendor.mediatek.hardware.mmagent@1.1 \
+    vendor.mediatek.hardware.mtklight-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.assist-V4-ndk \
+    vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.data-V3-ndk \
+    vendor.mediatek.hardware.mtkradioex.dch-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.em-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.ims-V3-ndk \
+    vendor.mediatek.hardware.mtkradioex.messaging-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.modem-V5-ndk \
+    vendor.mediatek.hardware.mtkradioex.mwi-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.network-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.ntn-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.rcs-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.se-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.sim-V2-ndk \
+    vendor.mediatek.hardware.mtkradioex.smartratswitch-V1-ndk \
+    vendor.mediatek.hardware.mtkradioex.voice-V1-ndk \
+    vendor.mediatek.hardware.neuropilot.neuronservice-V1-ndk \
+    vendor.mediatek.hardware.nps.nos.fastswitch-V1-ndk \
+    vendor.mediatek.hardware.power@1.1 \
+    vendor.mediatek.hardware.power@2.0 \
+    vendor.xiaomi.hardware.blackbox-V1-ndk \
+    vendor.xiaomi.hardware.cld_aidl-V1-ndk \
+    vendor.xiaomi.hardware.micharge-V2-ndk \
+    vendor.xiaomi.hardware.misauth-V1-ndk \
+    vendor.xiaomi.hardware.misys.common-V3-ndk \
+    vendor.xiaomi.hardware.misys.core-V1-ndk \
+    vendor.xiaomi.hardware.mrm-V1-ndk \
+    vendor.xiaomi.hardware.mtkblackbox-V2-ndk \
+    vendor.xiaomi.hardware.otrpagent2-V1-ndk \
+    vendor.xiaomi.hardware.otrpagent@2.0-impl \
+    vendor.xiaomi.hw.touchfeature-V1-ndk \
+    xiaomi.system.hypsys.common-V1-ndk \
+    libged_sys \
+    libgralloc_extra_sys \
+    libsf_cpupolicy \
+    libstagefright_mbrain \
+    libstagefright_wfd_mtk \
+    vendor.mediatek.hardware.camera.atms-V1-ndk \
+    vendor.mediatek.hardware.camera.atms@1.0 \
+    vendor.mediatek.hardware.camera.isphal-V1-ndk \
+    vendor.mediatek.hardware.camera.isphal@1.0 \
+    vendor.mediatek.hardware.composer_ext-V1-ndk \
+    vendor.mediatek.hardware.composer_ext@1.0 \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mtkpower-V2-ndk \
+    vendor.mediatek.hardware.mtkpower-V3-ndk \
+    vendor.mediatek.hardware.mtkpower@1.0 \
+    vendor.mediatek.hardware.mtkpower@1.1 \
+    vendor.mediatek.hardware.mtkpower@1.2 \
+    vendor.mediatek.hardware.mtkradioex@3.0 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.10 \
+    vendor.mediatek.hardware.pq@2.11 \
+    vendor.mediatek.hardware.pq@2.12 \
+    vendor.mediatek.hardware.pq@2.13 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
+    vendor.mediatek.hardware.pq@2.7 \
+    vendor.mediatek.hardware.pq@2.8 \
+    vendor.mediatek.hardware.pq@2.9 \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
+    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.pixelworks.hardware.display@1.0 \
+    vendor.pixelworks.hardware.display@1.1 \
+    vendor.pixelworks.hardware.display@1.2 \
+    vendor.pixelworks.hardware.feature@1.0 \
+    vendor.pixelworks.hardware.feature@1.1 \
+    vendor.xiaomi.hardware.displayfeature@1.0 \
+    vendor.xiaomi.hardware.fingerprintextension-V1-ndk \
+    vendor.xiaomi.hardware.fingerprintextension@1.0 \
+    libacse \
+    libdolbyacse_jni \
+    vendor.mediatek.hardware.mtkpower-V1-ndk \
+    com.android.hardware.cas \
+    NetworkStackGoogleGoResOverlay \
+    NetworkStackGoogleResOverlay \
+    NetworkStackResOverlay \
+    TetheringGoogleResOverlay \
+    TetheringResOverlay \
+    androidx.camera.extensions.impl.dummy \
+    CommandService.xml \
+    FastSwitch.xml \
+    android.hardware.audio.effect.service-aidl.mediatek.xml \
+    android.hardware.audio.service-aidl.mediatek.xml \
+    android.hardware.bluetooth-service-mediatek.xml \
+    android.hardware.gatekeeper-service.mitee.xml \
+    android.hardware.health-service.example.mediatek.xml \
+    android.hardware.security.keymint-service.mitee.xml \
+    android.hardware.security.secureclock-service.mitee.xml \
+    android.hardware.security.sharedsecret-service.mitee.xml \
+    android.hardware.usb-aidl-service.mediatek.xml \
+    android.hardware.usb.gadget-aidl-service.mediatek.xml \
+    android.hardware.wifi.hostapd.mediatek.xml \
+    android.hardware.wifi.supplicant.mediatek.xml \
+    bluetooth_audio.xml \
+    dms-service.xml \
+    dumpstate-xiaomi.xml \
+    lights-mtk-default.xml \
+    manifest_allocator.xml \
+    manifest_cameraprovider.xml \
+    manifest_hwcomposer.xml \
+    manifest_isphal.xml \
+    manifest_media_c2_default.xml \
+    manifest_mtkblackbox.xml \
+    manifest_vendor.xiaomi.hardware.cld_aidl.xml \
+    manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml \
+    mapper.mediatek.xml \
+    memtrack-mediatek.xml \
+    miface.xml \
+    mrm.xml \
+    mtkpower_applist-mtk-default.xml \
+    power-mediatek.xml \
+    thermal-mediatek.xml \
+    vendor.dolby.media.c2-default-service-dax.xml \
+    vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
+    vendor.xiaomi.hardware.micharge.xml \
+    vendor.xiaomi.hardware.misys.common.xml \
+    vendor.xiaomi.hardware.misys.core.xml \
+    vendor.xiaomi.hw.touchfeature-service.xml \
+    vendor.xiaomi.sensor.citsensorservice.aidl.xml \
+    AgentTest \
+    DFtool \
+    MI_IC \
+    MI_RIC \
+    SoterProvisioningTool_mitee \
+    aee_aedv64_v2 \
+    aee_dumpstatev_v2 \
+    aeev_v2 \
+    ated \
+    audiocmdservice_atci \
+    autobt \
+    backlight_bin \
+    bip_ap \
+    blkdiscard \
+    boardid_bin \
+    boringssl_self_test32 \
+    boringssl_self_test64 \
+    bt_dump \
+    ccci_mdinit \
+    ccci_rpcd \
+    charge_logger \
+    color \
+    conninfra_loader \
+    cteisno_bin \
+    dconfig \
+    dcxosetcap \
+    dexecutor \
+    displayfeature \
+    dmc_core \
+    doeapp-memtester \
+    doeapp-sat \
+    dreport \
+    dtc_vendor \
+    dumpsys \
+    eara_io_service \
+    factory \
+    ffu \
+    fidoca_mitee \
+    fpsgo \
+    frs \
+    frs_intf \
+    fuelgauged \
+    fuelgauged_nvram \
+    getfattr \
+    getopt \
+    gsm0710muxd \
+    hs20-osu-client \
+    android.hardware.audio.service-aidl.mediatek \
+    android.hardware.bluetooth-service-mediatek \
+    android.hardware.bluetooth.finder-service-mediatek \
+    android.hardware.bluetooth.ranging-service.mediatek \
+    android.hardware.contexthub-service.tinysys \
+    android.hardware.dumpstate-service.xiaomi \
+    android.hardware.gatekeeper-service.mitee \
+    android.hardware.graphics.composer@3.2-service \
+    android.hardware.graphics.composer@3.3-service \
+    android.hardware.graphics.composer@3.4-service \
+    android.hardware.health-service.example \
+    android.hardware.lights-service.mediatek \
+    android.hardware.media.c2-mediatek \
+    android.hardware.media.c2-mediatek-64b \
+    android.hardware.memtrack-service.mediatek \
+    android.hardware.neuralnetworks-shim-service-mtk \
+    android.hardware.neuralnetworks-shim-service-mtk-lazy \
+    android.hardware.security.keymint@4.0-service.mitee \
+    android.hardware.sensors-service.multihal \
+    android.hardware.thermal-service.mediatek \
+    android.hardware.usb-aidl-service.mediatek \
+    android.hardware.usb.gadget-aidl-service.mediatek \
+    camerahalserver \
+    android.hardware.graphics.allocator-V2-service-mediatek.mt6789 \
+    mtkfusionrild \
+    tetheroffloadservice \
+    vendor.dolby.dms.service \
+    vendor.dolby.media.c2-default-service-dax \
+    vendor.mediatek.hardware.aee@V1-service \
+    vendor.mediatek.hardware.gpuserv-service \
+    vendor.mediatek.hardware.mbrain-service.mediatek \
+    vendor.mediatek.hardware.mmagent-service \
+    vendor.mediatek.hardware.mmlpq@V1-service \
+    vendor.mediatek.hardware.mms-service \
+    vendor.mediatek.hardware.mtkpower-service.mediatek \
+    vendor.mediatek.hardware.mtkpower_applist-service.mediatek \
+    vendor.mediatek.hardware.neuropilot.neuronservice.neuronservice.mediatek \
+    vendor.mediatek.hardware.nvram-service \
+    vendor.mediatek.hardware.nwk_opt@1.0-service \
+    vendor.mediatek.hardware.pq_aidl-service \
+    vendor.mediatek.hardware.vgoservice \
+    vendor.xiaomi.hardware.cld_aidl-service \
+    vendor.xiaomi.hardware.displayfeature_aidl-service \
+    vendor.xiaomi.hardware.micharge-service \
+    vendor.xiaomi.hardware.mimd2 \
+    vendor.xiaomi.hardware.misys.core-service \
+    vendor.xiaomi.hw.touchfeature-service \
+    vendor.xiaomi.sensor.citsensorservice.aidl \
+    hypsys_vendor \
+    initprop_bin \
+    iwlist \
+    iwpriv \
+    jxnosfastswitch \
+    loghidlvendorservice \
+    meta_tst \
+    mi_thermald \
+    miteelog \
+    mlipayd_mitee \
+    mrdump_tool \
+    mrmd_mitee \
+    mt6660_calibration \
+    jpegtool \
+    v3avpud-64b.mt6789 \
+    mtd_mitee \
+    mtk_pkm_service \
+    mtk_plpath_utils_ota \
+    mtk_storageproxyd \
+    muxreport \
+    mvpu_ptn_player32_25 \
+    netdagent \
+    netdc \
+    nvram_daemon \
+    panelcolor_bin \
+    rcs_volte_stack \
+    rt5512_calibration \
+    rttv_v2 \
+    setfattr \
+    smartpa_nvtest \
+    sns_sensors_test_and_cal \
+    soterd \
+    stp_dump3 \
+    tee-supplicant \
+    test-nusensor \
+    test-nusensors \
+    thermal_core \
+    thermal_intf \
+    tidad_mitee \
+    touch_boost \
+    trusty-ut-ctrl \
+    uart_launcher \
+    userdata_setup \
+    vendor.xiaomi.hardware.otrpagent2 \
+    volte_clientapi_ua \
+    volte_rcs_ua \
+    vsimd_mitee \
+    wallpapercolor_bin \
+    wifi_dump \
+    wifitest \
+    wlan_assistant \
+    wmt_launcher \
+    wmt_loader \
+    wpa_cli
