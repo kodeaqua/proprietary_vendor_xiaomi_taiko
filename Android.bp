@@ -21787,15 +21787,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "bluetooth_audio.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/bluetooth_audio.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "dms-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/dms-service.xml",
@@ -22411,33 +22402,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "blkdiscard",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/blkdiscard",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libselinux",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "boardid_bin",
     owner: "xiaomi",
     target: {
@@ -22452,56 +22416,6 @@ cc_prebuilt_binary {
                 "libfile_op",
                 "libbase",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "boringssl_self_test32",
-    owner: "xiaomi",
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test32",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "boringssl_self_test64",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/boringssl_self_test64",
-            ],
-            shared_libs: [
-                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
@@ -22949,35 +22863,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "dumpsys",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/dumpsys",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "liblog",
-                "libbinder",
-                "libbinderdebug",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "eara_io_service",
     owner: "xiaomi",
     target: {
@@ -23257,60 +23142,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "getfattr",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/getfattr",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libselinux",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "getopt",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/getopt",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libselinux",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "gsm0710muxd",
     owner: "xiaomi",
     target: {
@@ -23326,36 +23157,6 @@ cc_prebuilt_binary {
                 "libaedv",
                 "libc++",
                 "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "hs20-osu-client",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hs20-osu-client",
-            ],
-            shared_libs: [
-                "libc",
-                "libcrypto",
-                "libcurl",
-                "libcutils",
-                "liblog",
-                "libssl",
-                "libxml2",
-                "libc++",
                 "libm",
                 "libdl",
             ],
@@ -25883,33 +25684,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "setfattr",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/setfattr",
-            ],
-            shared_libs: [
-                "libcrypto",
-                "liblog",
-                "libselinux",
-                "libz",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "smartpa_nvtest",
     owner: "xiaomi",
     target: {
@@ -26085,36 +25859,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "test-nusensors",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/test-nusensors",
-            ],
-            shared_libs: [
-                "liblog",
-                "libhardware",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "android.frameworks.sensorservice@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
     name: "thermal_core",
     owner: "xiaomi",
     target: {
@@ -26217,31 +25961,6 @@ cc_prebuilt_binary {
                 "libui",
                 "libutils",
                 "libexpat",
-                "liblog",
-                "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "trusty-ut-ctrl",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/trusty-ut-ctrl",
-            ],
-            shared_libs: [
-                "libc",
                 "liblog",
                 "libc++",
                 "libm",
@@ -26591,32 +26310,6 @@ cc_prebuilt_binary {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/bin/wmt_loader",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "wpa_cli",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/wpa_cli",
             ],
             shared_libs: [
                 "libcutils",

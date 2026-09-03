@@ -60,15 +60,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aee-commit:$(TARGET_COPY_OUT_VENDOR)/etc/aee-commit \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aee-config:$(TARGET_COPY_OUT_VENDOR)/etc/aee-config \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_configurations.bfbs_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_audio_set_scenarios.bfbs_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_configurations.json_mtk \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/aidl/le_audio/aidl_default_audio_set_scenarios.json:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/le_audio/aidl_default_audio_set_scenarios.json \
     vendor/xiaomi/taiko/proprietary/vendor/etc/apdb/APDB_MT6789___W2532:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2532 \
     vendor/xiaomi/taiko/proprietary/vendor/etc/apdb/APDB_MT6789___W2532_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6789___W2532_ENUM \
     vendor/xiaomi/taiko/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
@@ -214,12 +209,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/aurisys_config_adsp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_adsp.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/bluetooth_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_offload_audio_policy_configuration.xml \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.no_zygote.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.no_zygote.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.zygote32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote32.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.zygote64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/boringssl_self_test.zygote64_32.rc:$(TARGET_COPY_OUT_VENDOR)/etc/boringssl_self_test.zygote64_32.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/breakwhiteapplist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/breakwhiteapplist.xml \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/build_flags.json:$(TARGET_COPY_OUT_VENDOR)/etc/build_flags.json \
     vendor/xiaomi/taiko/proprietary/vendor/etc/camera/anc_night_algo_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_algo_cache \
     vendor/xiaomi/taiko/proprietary/vendor/etc/camera/anc_night_binary_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_binary_cache \
     vendor/xiaomi/taiko/proprietary/vendor/etc/camera/anc_night_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/anc_night_model \
@@ -547,7 +537,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/taiko/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
     vendor/xiaomi/taiko/proprietary/vendor/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
     vendor/xiaomi/taiko/proprietary/vendor/etc/fstab.mt6789:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6789 \
     vendor/xiaomi/taiko/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/xiaomi/taiko/proprietary/vendor/etc/gralloc/cam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/cam.xml \
@@ -579,16 +568,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.4-service.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.health-service.example.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health-service.example.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@4.0-service.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.usb-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb-aidl-service.mediatek.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb.gadget-aidl-service.mediatek.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/dcxo_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcxo_nvram_init.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/ddr_training.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ddr_training.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/display.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/display.rc \
@@ -665,7 +650,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.sensor.citsensorservice.aidl.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/vgoservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vgoservice.rc \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/wallpapercolor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wallpapercolor.rc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -697,7 +681,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taiko/proprietary/vendor/etc/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res.bin \
     vendor/xiaomi/taiko/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
     vendor/xiaomi/taiko/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
-    vendor/xiaomi/taiko/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/xiaomi/taiko/proprietary/vendor/etc/modules_table.csv:$(TARGET_COPY_OUT_VENDOR)/etc/modules_table.csv \
     vendor/xiaomi/taiko/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/taiko/proprietary/vendor/etc/mt6991/imgsensor_firmware:$(TARGET_COPY_OUT_VENDOR)/etc/mt6991/imgsensor_firmware \
@@ -1460,7 +1443,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb.gadget-aidl-service.mediatek.xml \
     android.hardware.wifi.hostapd.mediatek.xml \
     android.hardware.wifi.supplicant.mediatek.xml \
-    bluetooth_audio.xml \
     dms-service.xml \
     dumpstate-xiaomi.xml \
     lights-mtk-default.xml \
@@ -1499,10 +1481,7 @@ PRODUCT_PACKAGES += \
     autobt \
     backlight_bin \
     bip_ap \
-    blkdiscard \
     boardid_bin \
-    boringssl_self_test32 \
-    boringssl_self_test64 \
     bt_dump \
     ccci_mdinit \
     ccci_rpcd \
@@ -1519,7 +1498,6 @@ PRODUCT_PACKAGES += \
     doeapp-sat \
     dreport \
     dtc_vendor \
-    dumpsys \
     eara_io_service \
     factory \
     ffu \
@@ -1529,10 +1507,7 @@ PRODUCT_PACKAGES += \
     frs_intf \
     fuelgauged \
     fuelgauged_nvram \
-    getfattr \
-    getopt \
     gsm0710muxd \
-    hs20-osu-client \
     android.hardware.audio.service-aidl.mediatek \
     android.hardware.bluetooth-service-mediatek \
     android.hardware.bluetooth.finder-service-mediatek \
@@ -1609,19 +1584,16 @@ PRODUCT_PACKAGES += \
     rcs_volte_stack \
     rt5512_calibration \
     rttv_v2 \
-    setfattr \
     smartpa_nvtest \
     sns_sensors_test_and_cal \
     soterd \
     stp_dump3 \
     tee-supplicant \
     test-nusensor \
-    test-nusensors \
     thermal_core \
     thermal_intf \
     tidad_mitee \
     touch_boost \
-    trusty-ut-ctrl \
     uart_launcher \
     userdata_setup \
     vendor.xiaomi.hardware.otrpagent2 \
@@ -1633,5 +1605,4 @@ PRODUCT_PACKAGES += \
     wifitest \
     wlan_assistant \
     wmt_launcher \
-    wmt_loader \
-    wpa_cli
+    wmt_loader
